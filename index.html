@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanded World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .check_image {
+        width :20px;
+        border:1px solid ivory;
+        border-radius:50%;      
+	    animation: rotate 1.3s infinite;
+        float: left;
+  }
+
+  @keyframes rotate {
+    from {transform: perspective(200px) rotateX(0deg) rotateY(0deg);}
+    25% {transform: perspective(200px) rotateX(-90deg) rotateY(0deg);}
+    50% {transform: perspective(200px) rotateX(-180deg) rotateY(0deg);}
+    75% {transform: perspective(200px) rotateX(-270deg) rotateY(0deg);}
+    to {transform: perspective(200px) rotateX(-360deg) rotateY(0deg);}
+  }
+
+ 
+  
+    </style>
+
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <h1>Expanded</h1>
+                    <h1 id="world">World</h1>
+                </a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#">Me <span>▼</span></a>
+                        <ul>
+                            <li><a href="profile.html" class="english">Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Book <span>▼</span></a>
+                        <ul>
+                            <li><a href="#" class="hangeul">책 속의 문장</a></li>
+                            <li><a href="#" class="hangeul">책 리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Think <span>▼</span></a>
+                        <ul>
+                            <li><a href="#" class="hangeul">생각의 공유</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Science <span>▼</span></a>
+                        <ul>
+                            <li><a href="#" class="english">Universe</a></li>
+                            <li><a href="#" class="english">AI</a></li>
+                        </ul>
+                    </li>   
+                    <li><a href="#">Audio <span>▼</span></a>
+                        <ul>
+                            <li><a href="#" class="english">Radio</a></li>
+                            <li><a href="#" class="english">Podcast</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+            <div id="question">
+                    <h2>Weekly Question</h2>
+                    <p>Q. 자율주행자동차는 우리의 삶을 어떻게 바꿔놓을까요? <br>
+                        아래의 설문에 답해주세요.
+                    </p>
+                    <a href="#"><img src="images/check1.jpg" class="check_image"><b>설문 참여하기</b></a>
+            </div>
+
+            
+            <div id="slideShow">
+                <div id="slides">
+                    <img src="images/jeju1.jpg" alt="">
+                    <img src="images/jeju2.jpg" alt="">
+                    <img src="images/canada.jpg" alt="">
+                    <img src="images/sky-tree1.jpg" alt="">
+                    <img src="images/sky-tree3.jpg" alt="">
+                    <button id="prev">&lang;</button>
+                    <button id="next">&rang;</button>
+                </div>
+            </div>
+
+            <div id="box">
+                <h3>오늘의 한문장</h3>
+                <p>내가 성취하고자 하는 세계의 한계는<br>
+                바로 내가 구사하는 언어의 한계다.<br>
+                <i>- 루트비히 비트겐슈타인</i>
+                </p>
+            </div>
+        
+            <div id="tabMenu">
+                <input type="radio" id="tab1" name="tabs" checked>
+                <label for="tab1">Book</label>
+                <input type="radio" id="tab2" name="tabs">
+                <label for="tab2">Think</label>
+                <input type="radio" id="tab3" name="tabs">
+                <label for="tab3">Science</label>
+
+                <div id="book" class="tabContent">
+                    <h2>책 내용</h2>
+                    <ul>            
+                        <li><a href="#"><img src="images/book9.jpg"></li></a>
+                        <li><a href="#"><img src="images/book2.jpg"></li></a>
+                        <li><a href="#"><img src="images/book3.jpg"></li></a>     
+                    </ul>
+                  </div>
+                  <div id="think" class="tabContent">
+                    <h2>생각 리스트</h2>
+                    <ul>
+                         <li><a href="#" style="color:black;">개발자가 되고 싶어요</a></li>
+                         <li><a href="#" style="color:black;">무언가를 지속한다는 것</a></li>
+                         <li><a href="#" style="color:black;">기후변화와 환경문제</a></li> 
+                         <li><a href="#" style="color:black;">음성기반 플랫폼(클럽하우스, 카카오 음)</a></li>
+                           
+                    </ul>
+                  </div>    
+                  <div id="science" class="tabContent">
+                    <h2>과학 이야기</h2>
+                    <ul>
+                        <li><a href="#" style="color:black;">상상력 끝판왕 '다이슨 스피어'</a></li>
+                        <li><a href="#" style="color:black;">우리는 이미 AI와 함께 살고 있다</a></li>
+                        <li><a href="#" style="color:black;">인간이 화성에 이주해서 산다고?</a></li>
+                        <li><a href="#" style="color:black;">암흑물질과 암흑에너지</a></li>
+                        <li><a href="#" style="color:black;">우주 개발의 역사</a></li>
+
+                    </ul>
+                  </div>       
+            </div>
+            
+            
+            <div id="links">
+                <p>Radio & Podcast</p>
+                <div class="linkContent">
+                    <ul>
+                        <li>
+                            <a href="https://audioclip.naver.com/channels/7425" target="_blank" style="color:black;">
+                                <span id="quick-icon1"></span>
+                                <p>적콩무<br>
+                                <small>(적분이 콩나물 사는데 <br>
+                                    무슨 도움이 돼?)</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://audioclip.naver.com/channels/1850" target="_blank" style="color:black;">
+                                <span id="quick-icon2"></span>
+                                <p>과장창<br>
+                                    <small>(과학으로 장난치는게 창피해?)</small></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://audioclip.naver.com/channels/5408" target="_blank" style="color:black;">
+                                <span id="quick-icon3"></span>
+                                <p>푸른밤, 옥상달빛입니다
+                                    <small>(MBC 라디오)</small>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        <footer>
+            <div id="bottomMenu">
+                <div id="sns">
+                    <ul>
+                        <li><a href="https://brunch.co.kr/@jungdam" target="_blank"><img src="images/sns-4.png">브런치</a></li>
+                        <li><a href="http://www.instagram.com/chanee_han" target="_blank"><img src="images/sns-3.png">인스타그램</a></li>
+                        <li><a href="http://www.instagram.com/self_portrait_han" target="_blank"><img src="images/sns-3.png">인스타그램 글 계정</a></li>
+                    </ul>
+                </div>
+                <div id="email">
+
+                    <p> E-mail: gkscksgml8156@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+        
+        </div>
+        
+
+
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

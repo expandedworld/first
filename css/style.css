@@ -226,8 +226,8 @@ button:focus {
   clear: left;
   width: 475px;
   height: 155px;
-  /*background-color: rgb(57, 57, 168, 0.83);*/
-  background-color: rgb(60, 179, 113);
+  background-color: rgb(57, 57, 168, 0.83);
+  /*background-color: rgb(60, 179, 113);*/
   margin-right: 5px;
   margin-bottom: 5px;
   border-radius: 30px;

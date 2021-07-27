@@ -1,5 +1,5 @@
-/*
-var slides = document.querySelectorAll("#slides > img");
+
+var slides = document.querySelectorAll("#slides > a > img");
 var prev = document.querySelector("#prev");
 var next = document.querySelector("#next");
 
@@ -10,7 +10,7 @@ prev.onclick = prevSlide;
 next.onclick = nextSlide;
 
 function showSlides(n) {
-    for (let i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[n].style.display = "block";
@@ -29,12 +29,12 @@ function nextSlide() {
         current = 0;
         showSlides(current);
 }
-*/
 
 
 
 
 
+/*
 var current = 0;  // 첫 번째 이미지
 showSlides();  // 기본적으로 첫 번째 이미지 표시
 
@@ -49,3 +49,4 @@ function showSlides() {
   slides[current - 1 ].style.display = "block";  // 현재 위치 이미지 표시
   setTimeout(showSlides, 4000);   // 4초마다 showSlides 함수 반복 실행 
 }
+*/

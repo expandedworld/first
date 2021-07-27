@@ -45,7 +45,7 @@ header {
   font-family: "Itim", cursive;
   font-size: 40px;
   color: #fff;
-  animation: worm 13s infinite;
+  animation: worm 10s infinite;
   /*transition: 0.5s ease-in;*/
 }
 
@@ -59,13 +59,13 @@ header {
     transform: perspective(200px) rotateX(0deg) rotateY(0deg);
   }
   25% {
-    transform: perspective(200px) rotate3d(2.5, 1.2, -1.5, 360deg);
+    transform: perspective(200px) rotateX(360deg) rotateY(0deg);
   }
   50% {
     transform: perspective(200px) rotateX(360deg) rotateY(360deg);
   }
   75% {
-    transform: perspective(200px) rotate3d(-2.5, 1.2, 1.5, 360deg);
+    transform: perspective(200px) rotateX(0deg) rotateY(360deg);
   }
   to {
     transform: perspective(200px) rotateX(0deg) rotateY(0deg);
@@ -412,7 +412,7 @@ button:focus {
   margin: 0 auto;
   width: 150px;
   height: 150px;
-  border-radius: 25%;
+  border-radius: 15%;
   border: 1px solid #ddd;
   line-height: 150px;
 }
@@ -427,17 +427,17 @@ button:focus {
 }
 
 #quick-icon1 {
-  background-image: url("../images/audio1.jpg");
+  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/10661.png?_1625682026");
   background-size: 155px;
 }
 
 #quick-icon2 {
-  background-image: url("../images/audio2.jpg");
+  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/15206.png?_1627052760");
   background-size: 155px;
 }
 
 #quick-icon3 {
-  background-image: url("../images/audio3.jpg");
+  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/66.png?_1627356198");
   background-size: 155px;
 }
 

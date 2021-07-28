@@ -21,7 +21,7 @@ ul {
 }
 
 header {
-  margin-top: 5px;
+  margin-top: 8px;
   margin-bottom: 8px;
   width: 100%;
   height: 100px;
@@ -193,20 +193,26 @@ nav {
   padding: 8px;
   float: right;
   font-size: 13px;
+  transition: background-color 1s ease-in-out;
 }
 
 #question a,
 a:visited {
   color: #fff;
   background-color: rgba(10, 10, 10, 0.7);
-  border-radius: 20px;
+  border-radius: 15px;
+}
+
+#question a:hover {
+  background-color: transparent;
+  text-shadow: 1px 2px rgb(27, 47, 78);
 }
 
 #slideShow {
   float: right;
   width: 720px;
   height: 405px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   border-radius: 40px;
@@ -259,7 +265,7 @@ button:focus {
   background-color: rgb(57, 57, 168, 0.83);
   /*background-color: rgb(60, 179, 113);*/
   margin-right: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 30px;
   border: 1.9px solid rgb(85, 85, 85);
   /*border: 3px solid rgb(44, 134, 85);*/
@@ -295,7 +301,7 @@ button:focus {
   border-radius: 35px;
   border: 1px solid #ddd;
   margin-right: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
@@ -382,7 +388,7 @@ button:focus {
   border-bottom: 5px solid #fff;
   border: 1px solid #ddd;
   border-radius: 35px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }

@@ -401,6 +401,10 @@ button:focus {
   color: black;
 }
 
+#links > a > p:hover {
+  color: #aaa;
+}
+
 #links ul {
   padding: 0;
   overflow: hidden;

@@ -393,11 +393,12 @@ button:focus {
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-#links > p {
+#links > a > p {
   margin-left: 40px;
   padding: 5px 0;
   font-weight: 600;
   padding: 16px 0;
+  color: black;
 }
 
 #links ul {

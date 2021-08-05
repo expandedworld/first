@@ -24,11 +24,134 @@
     to {transform: perspective(200px) rotateX(-360deg) rotateY(0deg);}
   }
 
- 
-  
+ @media screen and (max-width: 500px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;   
+    }
+    header {
+        width: 375px;
+        border-radius: 20px;
+    }
+    #logo {
+        width: 85%;
+        padding-left: 50px;
+    }
+    nav {
+        display: none;
+    }
+    #question {
+        width: 375px;
+        border-radius: 20px;
+    }
+    #question h2 {
+  padding-top: 20px;
+  font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#question p {
+  font-size: 13px;
+}
+
+#question a {
+  margin: 5px 10px 0px 0px;
+  padding: 8px;
+  float: right;
+  font-size: 13px;
+  transition: background-color 1s ease-in-out;
+}
+#slideShow {
+        width: 375px;
+        height: 211px;
+        border-radius: 20px;
+    }
+ }
+#slides > a > img {
+  width: 375px;
+  float: left;
+}
+button {
+    height: 211px;
+}
+
+#box {
+    width: 375px;
+    border-radius: 20px;
+}
+
+#box p{
+    font-size: 13px;
+}
+
+#tabMenu {
+    width: 375px;
+    border-radius: 20px;
+    height: 250px;
+}
+#book ul {
+  list-style: disc;
+  margin-left: 10px;
+}
+
+#book ul li img {
+  width: 75px;
+  margin: 0px 20px;
+}
+
+#links {
+    width: 375px;
+    border-radius: 20px;
+    height: 230px;
+}
+
+#links ul li a span {
+    width: 80px;
+    height: 80px;
+}
+
+#quick-icon1 {
+    background-size: 80px;
+}
+#quick-icon2 {
+    background-size: 80px;
+}
+#quick-icon3 {
+    background-size: 80px;
+}
+
+.linkContent p {
+    font-size: 11.5px;
+}
+
+footer {
+    width: 375px;
+}
+
+#bottomMenu {
+  height: 80px;
+}
+
+#bottomMenu ul{
+    margin-top: 0px;
+}
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+  font-size: 12px;
+  color: #666;
+}
+#sns img {
+  width: 15px;
+}
+#email {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  font-size: 12px;
+}
     </style>
-
-
 </head>
 <body>
     <div id="container">

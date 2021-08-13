@@ -45,6 +45,28 @@
     nav {
         display: none;
     }
+
+    #profile {
+        margin: 0 auto;
+        display: block;
+        background-color: rgba(50, 32, 218, 0.8);
+        margin-bottom: 5px;
+        width: 95%;
+        height: 35px;
+        border-radius: 12px;
+        border: solid 2px #ddd;
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+            10px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    }
+
+    #profile > a > p {
+        margin-top: 6px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+        
+    }
+
     #question {
         border-radius: 20px;
         margin: 0 auto;
@@ -130,6 +152,11 @@ button {
     border-radius: 20px;
     height: 250px;
 }
+
+#tabMenu label {
+  padding: 15px 15px;
+}
+
 #book ul {
   list-style: disc;
   margin-left: 10px;
@@ -146,6 +173,10 @@ button {
     width: 95%;
     border-radius: 20px;
     height: 230px;
+}
+
+#links > a > p {
+  margin-left: 25px
 }
 
 #links ul li a span {
@@ -221,23 +252,23 @@ footer {
                             <li><a href="#" class="hangeul">책 리뷰</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Think <span>▼</span></a>
-                        <ul>
-                            <li><a href="#" class="hangeul">생각의 공유</a></li>
-                        </ul>
+                    <li>
+                        <a href="audio.html">Audio</a>
                     </li>
-                    <li><a href="#">Science <span>▼</span></a>
-                        <ul>
-                            <li><a href="#" class="english">Universe</a></li>
-                            <li><a href="#" class="english">AI</a></li>
-                        </ul>
-                    </li>   
-                    <li><a href="audio.html">Audio</a>
+                    <li>
+                        <a href="#">Think</a>
                     </li>
+                    <li>
+                        <a href="#">Picture</a>
+                    </li>  
                 </ul>
             </nav>
         </header>
-        
+
+            <div id="profile">
+                <a href="profile.html"><p>프로필 보러가기</p></a>
+            </div>
+            
             <div id="question">
                     <h2>Weekly Question</h2>
                     <p>Q. 자율주행자동차는 우리의 삶을 어떻게 바꿔놓을까요? <br>
@@ -264,7 +295,7 @@ footer {
                     <img src="images/sea4.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
-                    <img src="images/sea3.jpg" class="d-block w-100" alt="...">
+                    <img src="images/yangpyeong.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="40000">
                     <video src="images/jungdongjin (convert-video-online.com).mp4" controls muted autoplay loop class="d-block w-100" alt="..."></video>
@@ -313,7 +344,9 @@ footer {
                 <input type="radio" id="tab2" name="tabs">
                 <label for="tab2">Think</label>
                 <input type="radio" id="tab3" name="tabs">
-                <label for="tab3">Science</label>
+                <label for="tab3">Question</label>
+                <input type="radio" id="tab4" name="tabs">
+                <label for="tab4">Science</label>
 
                 <div id="book" class="tabContent">
                     <h2>책 내용</h2>
@@ -332,7 +365,13 @@ footer {
                          <li><a href="#" style="color:black;">음성기반 플랫폼(클럽하우스, 카카오 음)</a></li>
                            
                     </ul>
-                  </div>    
+                  </div>
+                  <div id="question_list" class="tabContent">
+                    <h2>질문 리스트</h2>
+                    <ul>
+                        <li><a href="#" style="color:black;">자율주행자동차는 우리의 삶을 어떻게 바꿔놓을까요?</a></li>
+                    </ul>
+                  </div>     
                   <div id="science" class="tabContent">
                     <h2>과학 이야기</h2>
                     <ul>

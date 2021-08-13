@@ -152,6 +152,10 @@ nav {
   color: #fff;
 }
 
+#profile {
+  display: none;
+}
+
 #question {
   float: left;
   width: 475px;
@@ -263,7 +267,7 @@ button:focus {
 /*여기부터 bootstrap 이용한 slide-show*/
 
 .carousel {
-  background-color: rgb(199, 226, 238);
+  background-color: rgb(222, 237, 245);
   position: relative;
   float: right;
   width: 720px;
@@ -615,6 +619,12 @@ button:focus {
   line-height: 33px;
 }
 
+#question_list ul {
+  list-style: disc;
+  margin-left: 60px;
+  line-height: 33px;
+}
+
 #science ul {
   list-style: disc;
   margin-left: 60px;
@@ -623,7 +633,8 @@ button:focus {
 
 #tab1:checked ~ #book,
 #tab2:checked ~ #think,
-#tab3:checked ~ #science {
+#tab3:checked ~ #question_list,
+#tab4:checked ~ #science {
   display: block;
 }
 

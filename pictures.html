@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio&Podcast</title>
+    <link rel="stylesheet" href="css/pictures.css">
+    <style>
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+            #container {
+                margin: 0 auto;
+                width: 95%;   
+            }
+            header {
+                margin: 0 auto;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                width: 95%;
+                border-radius: 20px;
+            }
+            #logo {
+                width: 85%;
+                padding-left: 50px;
+            }
+            nav {
+                display: none;
+            }
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px 0px;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .wrapper p {
+                font-size: 11.5px;
+            }    
+
+            #links ul li img {
+                width: 90%;
+                height: 180.16px;
+            }
+
+            #links {
+                width: 95%;
+                margin: 0 auto;
+                height: 1100px;
+                margin-bottom: 20px;
+                }
+                
+
+            footer {
+                margin: 0 auto;
+                margin-top: 8px;
+                margin-bottom: 5px;
+                width: 95%;
+            }
+        #bottomMenu ul li a,
+        #bottomMenu ul li a:visited {
+            font-size: 10px;
+            color: #666;
+            }
+
+        #bottomMenu ul li{
+            padding: 12px;
+        }
+            
+        #sns img {
+            width: 15px;
+            }
+        #email {
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            font-size: 12px;
+            }    
+        }
+            
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <h1>Expanded</h1>
+                    <h1 id="world">World</h1>
+                </a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#">Me <span>▼</span></a>
+                        <ul>
+                            <li><a href="profile.html" class="english">Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Book <span>▼</span></a>
+                        <ul>
+                            <li><a href="#" class="hangeul">책 속의 문장</a></li>
+                            <li><a href="#" class="hangeul">책 리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="audio.html">Audio</a>
+                    </li>
+                    <li>
+                        <a href="#">Think</a>
+                    </li>
+                    <li>
+                        <a href="#">Picture</a>
+                    </li>   
+                </ul>
+            </nav>
+        </header>
+        <div id="links">
+            <div id="picture_contents">
+                <p>Pictures</p>
+                <div class="pictureContent">
+                    <ul>
+                        <div class="wrapper">
+                           <li>
+                               <img src="images/sea1.jpg" alt="속초 영금정 사진">
+                           </li>
+                           <li>
+                            <img src="images/sea2.jpg" alt="정동진 바다 사진">
+                            </li>
+                            <li>
+                                <img src="images/sky-tree1.jpg" alt="하늘 사진">
+                            </li>
+                            <li>
+                             <img src="images/yangpyeong.jpg" alt="양평 하늘 사진">
+                             </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="bottomMenu">
+                <div id="sns">
+                    <ul>
+                        <li><a href="https://brunch.co.kr/@jungdam" target="_blank"><img src="images/sns-4.png">브런치</a></li>
+                        <li><a href="http://www.instagram.com/chanee_han" target="_blank"><img src="images/sns-3.png">인스타그램</a></li>
+                        <li><a href="http://www.instagram.com/self_portrait_han" target="_blank"><img src="images/sns-3.png">인스타그램 글 계정</a></li>
+                    </ul>
+                </div>
+                <div id="email">
+
+                    <p> E-mail: gkscksgml8156@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+        
+
+    </div>   
+</body>
+</html>

@@ -162,7 +162,7 @@ nav {
 
 #links {
   width: 1200px;
-  height: 600px;
+  height: 100%;
   background-color: ivory;
   border-bottom: 5px solid #fff;
   border: 1px solid #ddd;

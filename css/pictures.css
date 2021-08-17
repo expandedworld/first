@@ -155,14 +155,14 @@ nav {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
-  grid-gap: 20px 130px;
+  grid-gap: 20px 160px;
   justify-content: center;
   align-content: center;
 }
 
 #links {
   width: 1200px;
-  height: 600px;
+  height: 100%;
   background-color: ivory;
   border-bottom: 5px solid #fff;
   border: 1px solid #ddd;
@@ -170,6 +170,22 @@ nav {
   margin-bottom: 20px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.pictureContent {
+  border-top: 1px solid #ddd;
+  padding: 0;
+}
+
+#picture_contents h2 {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+#picture_contents a {
+  display: block;
+  color: #666;
+  margin: 5px;
 }
 
 #picture_contents > p {
@@ -187,13 +203,50 @@ nav {
 }
 
 #links ul li {
+  border-radius: 20px;
+  width: 452px;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 0 50px 0;
+  background-color: rgb(194, 233, 238, 0.4);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 #links ul li img {
-  width: 400px;
-  height: 180.16px;
+  width: 450px;
+  /*height: 180.16px;*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wrapper h3 {
+  margin: 15px;
+}
+
+.wrapper li {
+  border: 1px solid #aaa;
+}
+
+#detail {
+  display: none;
+}
+
+.detail {
+  margin: 0 auto;
+  padding: 0 20px 15px 20px;
+}
+
+#close {
+  text-align: center;
+  background-color: black;
+  width: 170px;
+  height: 27px;
+  border-radius: 13px;
+  float: right;
+}
+
+#close p {
+  color: white;
 }
 
 footer {

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio&Podcast</title>
+    <title>Pictures</title>
     <link rel="stylesheet" href="css/pictures.css">
     <style>
         @media screen and (max-width: 768px) and (orientation: portrait) {
             #container {
                 margin: 0 auto;
-                width: 95%;   
+                width: 100%;   
             }
             header {
                 margin: 0 auto;
@@ -29,27 +29,46 @@
             .wrapper {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-gap: 10px 0px;
+                grid-gap: 30px 0px;
                 justify-content: center;
                 align-content: center;
             }
 
             .wrapper p {
-                font-size: 11.5px;
+                font-size: 13px;
             }    
 
-            #links ul li img {
-                width: 90%;
-                height: 180.16px;
+            #picture_contents h2 {
+                margin-left: 30px;
             }
 
+            #links ul li img {
+                width: 100%;
+            }
+
+            #links ul {
+                width: 100%;
+            }
+
+            #links ul li{
+                width: 90%;
+                margin: 30px auto;
+            }
+            
+
+            
             #links {
-                width: 95%;
+                width: 100%;
                 margin: 0 auto;
-                height: 1100px;
+                height: 100%;
                 margin-bottom: 20px;
                 }
-                
+
+            .detail {
+                margin: 0 auto;
+                padding: 0 30px 15px 30px;
+                width: 90%;
+            }    
 
             footer {
                 margin: 0 auto;
@@ -70,6 +89,7 @@
         #sns img {
             width: 15px;
             }
+
         #email {
             position: absolute;
             top: 60px;
@@ -108,7 +128,7 @@
                         <a href="#">Think</a>
                     </li>
                     <li>
-                        <a href="#">Picture</a>
+                        <a href="pictures.html">Picture</a>
                     </li>   
                 </ul>
             </nav>
@@ -117,23 +137,88 @@
             <div id="picture_contents">
                 <p>Pictures</p>
                 <div class="pictureContent">
+                    <h2>2021.08</h2>
                     <ul>
                         <div class="wrapper">
                            <li>
                                <img src="images/sea1.jpg" alt="속초 영금정 사진">
+                               <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>속초 영금정</h3>
+                                   <p>여행 둘째날 마지막 코스. <br>
+                                    태풍이 동해로 지나간 이후라서 그런지 바다가 아주 거셌다.
+                                    바람이 세차게 불고 비까지 내려서 오래 머물지는 못했지만
+                                    짧은 시간 바다는 위엄있는 모습을 보여주었다.
+                                    </p>
+                               </div>
+                               
                            </li>
                            <li>
                             <img src="images/sea2.jpg" alt="정동진 바다 사진">
+                            <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>정동진 바다</h3>
+                                   <p>여행 둘째날 첫번째 코스. 
+                                    </p>
+                               </div>
+                               
                             </li>
                             <li>
-                                <img src="images/sky-tree1.jpg" alt="하늘 사진">
+                                <img src="images/sea4.jpg" alt="바다 사진">
+                                <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>정동진 바다</h3>
+                                   <p>여행 둘째날 첫번째 코스. <br>
+                                    날씨가 좋았다 안좋았다 오락가락했다.
+                                    </p>
+                               </div>
                             </li>
                             <li>
                              <img src="images/yangpyeong.jpg" alt="양평 하늘 사진">
+                             <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>양평휴게소 하늘</h3>
+                                   <p>휴게소에 들렸는데 하늘이 예뻐서.
+                                    </p>
+                               </div>
                              </li>
                         </div>
                     </ul>
+                    <h2>2021.07</h2>
+                    <ul>
+                        <div class="wrapper">
+                           <li>
+                               <img src="images/dolphin_cloud.jpg" alt="돌고래 모양 구름">
+                               <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>돌고래 모양 구름</h3>
+                                   <p>뭔가 구름이 돌고래 닮았다.
+                                    </p>
+                               </div>
+                           </li>
+                           <li>
+                            <img src="images/sky-tree3.jpg" alt="하늘과 나무">
+                            <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>하늘과 나무</h3>
+                                   <p>일산 호수공원에서 누워서 찍은 사진
+                                    </p>
+                               </div>
+                            </li>
+                            <li>
+                                <img src="images/munggae.jpg" alt="뭉게 구름">
+                                <a id="view">상세 설명 보기</a>
+                               <div id="detail" class="detail">
+                                    <h3>뭉게 구름</h3>
+                                   <p>구름이 몽글 몽글
+                                    </p>
+                               </div>
+                            </li>
+                            
+                        </div>
+                    </ul>
                 </div>
+                <a id="close" onclick="cl()"><p>상세 설명 모두 닫기</p></a>
             </div>
         </div>
 
@@ -155,5 +240,6 @@
         
 
     </div>   
+    <script src="js/detail.js"></script>
 </body>
 </html>

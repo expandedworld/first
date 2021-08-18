@@ -21,7 +21,22 @@ for(let i=0; i < view.length; i++) {
 }*/
 
 
+//curried 방식으로 상세 설명 닫기 구현
+for(i=0; i < texthidden.length; i++) {
+    texthidden[i].addEventListener("click", click(i));
+}
+
+function click(num) {
+    return function curried_click(e) {
+        detail[num].style.display = "none";
+        view[num].style.display = "block";
+    }
+}
+
+
+
 /*상세 설명 닫기*/
+/*
 texthidden[0].addEventListener("click", function(){
     detail[0].style.display = "none";
     view[0].style.display = "block";
@@ -56,7 +71,7 @@ texthidden[6].addEventListener("click", function(){
     detail[6].style.display = "none";
     view[6].style.display = "block";
 });
-
+*/
 
 /*상세 설명 모두 닫기*/
 function cl() {

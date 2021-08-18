@@ -182,10 +182,23 @@ nav {
   margin-top: 10px;
 }
 
-#picture_contents a {
+#view {
   display: block;
   color: #666;
-  margin: 5px;
+  margin: 5px auto;
+  width: 130px;
+}
+
+#texthidden {
+  display: block;
+  color: #666;
+
+  width: 20px;
+  margin: 30px auto 0px auto;
+}
+#x_button {
+  width: 20px !important;
+  border-radius: 0 !important;
 }
 
 #picture_contents > p {

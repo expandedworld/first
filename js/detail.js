@@ -1,7 +1,9 @@
 var view = document.querySelectorAll("#view");
-var detail = document.querySelectorAll("#detail");
+var detail = document.querySelectorAll(".detail");
+var texthidden = document.querySelectorAll("#texthidden");
 
 
+/*상세 설명 보기*/
 for(let i=0; i < view.length; i++) {
         view[i].addEventListener("click", function(){
         let detail_item = detail[i]
@@ -10,6 +12,53 @@ for(let i=0; i < view.length; i++) {
         });
 }
 
+/*for(i=0; i < texthidden.length; i++) {
+    texthidden[i].addEventListener("click", function(){
+    let detail_item3 = detail[i]
+    detail_item3.style.display = "none";
+    view[i].style.display = "block";
+    });
+}*/
+
+
+/*상세 설명 닫기*/
+texthidden[0].addEventListener("click", function(){
+    detail[0].style.display = "none";
+    view[0].style.display = "block";
+});
+
+texthidden[1].addEventListener("click", function(){
+    detail[1].style.display = "none";
+    view[1].style.display = "block";
+});
+
+texthidden[2].addEventListener("click", function(){
+    detail[2].style.display = "none";
+    view[2].style.display = "block";
+});
+
+texthidden[3].addEventListener("click", function(){
+    detail[3].style.display = "none";
+    view[3].style.display = "block";
+});
+
+texthidden[4].addEventListener("click", function(){
+    detail[4].style.display = "none";
+    view[4].style.display = "block";
+});
+
+texthidden[5].addEventListener("click", function(){
+    detail[5].style.display = "none";
+    view[5].style.display = "block";
+});
+
+texthidden[6].addEventListener("click", function(){
+    detail[6].style.display = "none";
+    view[6].style.display = "block";
+});
+
+
+/*상세 설명 모두 닫기*/
 function cl() {
     for(i=0; i < detail.length; i++){
         let detail_item2 = detail[i]

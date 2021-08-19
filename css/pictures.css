@@ -172,6 +172,42 @@ nav {
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+.pictureContent input[type="radio"] {
+  display: none;
+}
+
+.pictureContent label {
+  display: inline-block;
+  margin: 0 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.pictureContent label:hover {
+  color: #222;
+  cursor: pointer;
+}
+
+.pictureContent input:checked + label {
+  color: rgb(22, 7, 233);
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.tabContent {
+  display: none;
+  padding: 20px 0 0;
+}
+
+#tab1:checked ~ #pic_08,
+#tab2:checked ~ #pic_07 {
+  display: block;
+}
+
 .pictureContent {
   border-top: 1px solid #ddd;
   padding: 0;
@@ -217,7 +253,7 @@ nav {
 
 #links ul li {
   border-radius: 20px;
-  width: 452px;
+  width: 482px;
   text-align: center;
   margin: 10px 0 50px 0;
   background-color: rgb(194, 233, 238, 0.4);
@@ -226,7 +262,7 @@ nav {
 }
 
 #links ul li img {
-  width: 450px;
+  width: 480px;
   /*height: 180.16px;*/
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -256,6 +292,7 @@ nav {
   height: 27px;
   border-radius: 13px;
   float: right;
+  margin: 10px 0;
 }
 
 #close p {

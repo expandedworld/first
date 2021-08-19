@@ -152,6 +152,10 @@ nav {
   color: #fff;
 }
 
+#menu {
+  display: none;
+}
+
 #profile {
   display: none;
 }

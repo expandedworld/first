@@ -29,7 +29,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
-        width: 100%;   
+        width: 100%;  
     }
     header {
         margin: 0 auto;
@@ -46,7 +46,37 @@
         display: none;
     }
 
-    #profile {
+    #menu {
+        position: sticky;
+        top: 0px;
+        margin: 0 auto;
+        display: block;
+        background-color: rgba(11, 11, 12, 0.8);
+        margin-bottom: 5px;
+        width: 95%;
+        height: 35px;
+        border-radius: 12px;
+        border: solid 2px #ddd;
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+            10px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    }
+
+    #menu > a {
+        display: inline-block;
+        width: 80px;
+        margin-top: 7px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        border-right: 1px solid #ddd;    
+    }
+
+    #menu > a:last-child {
+        border-right: none;
+    }
+
+    /*#profile {
         margin: 0 auto;
         display: block;
         background-color: rgba(50, 32, 218, 0.8);
@@ -65,7 +95,7 @@
         text-align: center;
         font-weight: 700;
         color: #fff;    
-    }
+    }*/
 
     #question {
         border-radius: 20px;
@@ -265,9 +295,18 @@ footer {
             </nav>
         </header>
 
-            <div id="profile">
+            <div id="menu" class="english">
+                <a href="profile.html">Profile</a>
+                <a>Book</a>
+                <a href="audio.html">Audio</a>
+                <a href="pictures.html">Picture</a>
+            </div>
+
+            <!--
+                <div id="profile">
                 <a href="profile.html"><p>프로필 보러가기</p></a>
             </div>
+        -->
 
             <div id="question">
                     <h2>Weekly Question</h2>

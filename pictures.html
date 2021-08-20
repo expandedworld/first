@@ -26,6 +26,49 @@
             nav {
                 display: none;
             }
+
+            
+            #menu {
+                z-index: 2;
+                position: sticky;
+                top: 0px;
+                margin: 0 auto;
+                display: block;
+                background-color: rgba(11, 11, 12, 0.8);
+                margin-bottom: 5px;
+                width: 95%;
+                height: 35px;
+                border-radius: 12px;
+                border: solid 2px #ddd;
+                box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+                    10px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+                overflow: hidden;
+                }
+
+            #menu > a {
+                display: inline-block;
+                width:72px;
+                margin-top: 7px;
+                font-size: 14px;
+                text-align: center;
+                font-weight: 400;
+                color: #fff;
+                border-right: 1px solid #ddd;
+            }
+
+            #menu > a:last-child {
+                border-right: none;
+            }
+            #menu > a:nth-child(5) {
+                width: 30px;
+                border-right: none;
+            }
+
+            .menu-click {
+            height: 100% !important;
+            }
+
+            
             .wrapper {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -68,7 +111,9 @@
                 margin: 0 auto;
                 padding: 0 30px 15px 30px;
                 width: 90%;
-            }    
+            }
+            
+            
 
             footer {
                 margin: 0 auto;
@@ -133,11 +178,24 @@
                 </ul>
             </nav>
         </header>
+        <div id="menu" class="english">
+                
+            <a href="profile.html">Profile</a>
+            <a>Book</a>
+            <a href="audio.html">Audio</a>
+            <a href="pictures.html">Picture</a>
+            <a onclick="toggle()">▼</a>
+            <a>Science</a>
+            <a>Think</a>
+            <a>Question</a>
+            <a>Sentences</a>
+        </div>
+
         <div id="links">
             <div id="picture_contents">
                 <p>Pictures</p>
                 <div class="pictureContent">
-
+            
                 <input type="radio" id="tab1" name="tabs" checked>
                 <label for="tab1">2021.08</label>
                 <input type="radio" id="tab2" name="tabs">
@@ -272,5 +330,6 @@
 
     </div>   
     <script src="js/detail.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

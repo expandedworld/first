@@ -160,6 +160,10 @@ nav {
   align-content: center;
 }
 
+#menu {
+  display: none;
+}
+
 #links {
   width: 1200px;
   height: 100%;

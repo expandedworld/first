@@ -28,7 +28,7 @@ header {
   background-color: #11264f;
   border-radius: 20px 20px 25px 25px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    8px 8px 16px -7px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    8px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 #logo {

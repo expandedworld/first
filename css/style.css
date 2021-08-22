@@ -105,8 +105,8 @@ nav {
 }
 
 #topMenu > li > a:hover {
-  color: #000;
-  text-shadow: 0 -1px #07c;
+  color: ivory;
+  text-shadow: 0 -0.5px white;
 }
 
 #topMenu > li > ul {
@@ -518,12 +518,12 @@ button:focus {
   clear: left;
   width: 475px;
   height: 155px;
-  background-color: rgb(57, 57, 168, 0.83);
+  background-color: rgb(230, 233, 247);
   /*background-color: rgb(60, 179, 113);*/
   margin-right: 5px;
   margin-bottom: 10px;
   border-radius: 30px;
-  border: 1.9px solid rgb(85, 85, 85);
+  border: 1.9px solid rgb(216, 215, 215);
   /*border: 3px solid rgb(44, 134, 85);*/
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
@@ -532,13 +532,11 @@ button:focus {
 #box h3 {
   padding-top: 15px;
   text-align: center;
-  color: #fff;
 }
 
 #box p {
   text-align: center;
   font-size: 15px;
-  color: #fff;
   line-height: 30px;
   padding-top: 10px;
 }

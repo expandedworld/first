@@ -106,8 +106,8 @@ nav {
 }
 
 #topMenu > li > a:hover {
-  color: #000;
-  text-shadow: 0 -1px #07c;
+  color: ivory;
+  text-shadow: 0 -0.5px white;
 }
 
 #topMenu > li > ul {

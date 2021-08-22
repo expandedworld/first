@@ -109,8 +109,8 @@ nav {
 }
 
 #topMenu > li > a:hover {
-  color: #000;
-  text-shadow: 0 -1px #07c;
+  color: ivory;
+  text-shadow: 0 -0.5px white;
 }
 
 #topMenu > li > ul {
@@ -195,12 +195,12 @@ nav {
 }
 
 .pictureContent label:hover {
-  color: #222;
+  color: rgb(7, 87, 248);
   cursor: pointer;
 }
 
 .pictureContent input:checked + label {
-  color: rgb(22, 7, 233);
+  color: #222;
   border: 1px solid #ddd;
   background-color: #eee;
 }
@@ -306,7 +306,7 @@ nav {
 
 #close {
   text-align: center;
-  background-color: #11264f;
+  background-color: rgb(17, 38, 79, 0.95);
   width: 160px;
   height: 27px;
   border-radius: 7px;
@@ -321,7 +321,7 @@ nav {
 
 #open {
   text-align: center;
-  background-color: #11264f;
+  background-color: rgb(17, 38, 79, 0.95);
   width: 160px;
   height: 27px;
   border-radius: 7px;

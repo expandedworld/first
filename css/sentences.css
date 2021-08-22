@@ -27,7 +27,7 @@ header {
   margin-bottom: 8px;
   width: 100%;
   height: 100px;
-  background-color: #0f502c;
+  background-color: #11264f;
 
   border-radius: 20px 20px 25px 25px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
@@ -44,7 +44,7 @@ header {
 }
 
 #logo h1 {
-  font-family: "Itim", cursive;
+  font-family: "Merienda", cursive;
   font-size: 40px;
   color: #fff;
   animation: worm 10s infinite;
@@ -169,7 +169,7 @@ nav {
 #links {
   width: 1200px;
   height: 100%;
-  background-color: rgb(115, 93, 52, 0.9);
+  background-color: rgb(248, 241, 242);
   border-bottom: 5px solid #fff;
   border: 1px solid #ddd;
   border-radius: 35px;
@@ -188,7 +188,7 @@ nav {
   padding: 15px 25px;
   font-weight: 600;
   text-align: center;
-  color: white;
+  color: #aaa;
   border: 1px solid transparent;
   border-radius: 20px;
 }
@@ -199,9 +199,9 @@ nav {
 }
 
 .pictureContent input:checked + label {
-  color: black;
+  color: rgb(22, 7, 233);
   border: 1px solid #ddd;
-  background-color: rgb(222, 184, 135);
+  background-color: #eee;
 }
 
 .tabContent {
@@ -256,7 +256,6 @@ nav {
   font-size: 20px;
   width: 140px;
   display: inline-block;
-  color: white;
 }
 
 #links ul {
@@ -270,7 +269,7 @@ nav {
   width: 482px;
   text-align: center;
   margin: 10px 0 50px 0;
-  background-color: rgb(224, 202, 176);
+  background-color: rgb(250, 250, 241);
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
@@ -283,7 +282,7 @@ nav {
 }
 
 .wrapper h3 {
-  border-bottom: solid 3px white;
+  border-bottom: solid 3px rgb(194, 233, 238, 0.8);
   margin: 15px;
   font-size: 33px;
   font-weight: 400;
@@ -318,7 +317,7 @@ nav {
 
 #close {
   text-align: center;
-  background-color: #261816;
+  background-color: #11264f;
   width: 130px;
   height: 27px;
   border-radius: 5px;
@@ -333,7 +332,7 @@ nav {
 
 #open {
   text-align: center;
-  background-color: #261816;
+  background-color: #11264f;
   width: 130px;
   height: 27px;
   border-radius: 5px;

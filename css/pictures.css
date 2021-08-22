@@ -45,7 +45,7 @@ header {
 }
 
 #logo h1 {
-  font-family: "Itim", cursive;
+  font-family: "Merienda", cursive;
   font-size: 40px;
   color: #fff;
   animation: worm 10s infinite;
@@ -264,7 +264,7 @@ nav {
   width: 482px;
   text-align: center;
   margin: 10px 0 50px 0;
-  background-color: rgb(194, 233, 238, 0.4);
+  background-color: white; /*rgb(194, 233, 238, 0.4);*/
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
@@ -277,7 +277,7 @@ nav {
 }
 
 .wrapper h3 {
-  border-bottom: solid 3px rgb(153, 153, 153);
+  border-bottom: solid 3px rgb(194, 233, 238, 0.6);
   margin: 15px;
   font-size: 34px;
   font-weight: 400;

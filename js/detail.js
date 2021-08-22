@@ -5,8 +5,8 @@ var texthidden = document.querySelectorAll("#texthidden");
 
 /*상세 설명 보기*/
 for(let i=0; i < view.length; i++) {
-        view[i].addEventListener("click", function(){
         let detail_item = detail[i]
+        view[i].addEventListener("click", function(){
         detail_item.style.display = "block";
         view[i].style.display = "none";
         });
@@ -83,7 +83,13 @@ function cl() {
 }
 
 
-
+function op() {
+    for(i=0; i < detail.length; i++){
+        let detail_item3 = detail[i]
+        detail_item3.style.display = "block";
+        view[i].style.display = "none";
+    }
+}
 
 
 

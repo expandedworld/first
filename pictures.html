@@ -77,9 +77,9 @@
                 align-content: center;
             }
 
-            .wrapper p {
-                font-size: 13px;
-            }    
+            .detail p {
+                font-size: 16px;
+            }
 
             #picture_contents h2 {
                 margin-left: 30px;
@@ -163,7 +163,7 @@
                     </li>
                     <li><a href="#">Book <span>▼</span></a>
                         <ul>
-                            <li><a href="#" class="hangeul">책 속의 문장</a></li>
+                            <li><a href="sentences.html" class="hangeul">책 속의 문장</a></li>
                             <li><a href="#" class="hangeul">책 리뷰</a></li>
                         </ul>
                     </li>
@@ -181,19 +181,20 @@
         <div id="menu" class="english">
                 
             <a href="profile.html">Profile</a>
-            <a>Book</a>
+            <a href="sentences.html">Sentences</a>
             <a href="audio.html">Audio</a>
             <a href="pictures.html">Picture</a>
             <a onclick="toggle()">▼</a>
+            <a>Book</a>
             <a>Science</a>
             <a>Think</a>
             <a>Question</a>
-            <a>Sentences</a>
         </div>
 
         <div id="links">
             <div id="picture_contents">
                 <p>Pictures</p>
+                <a id="open" onclick="op()"><p>상세 설명 모두 보기</p></a>
                 <div class="pictureContent">
             
                 <input type="radio" id="tab1" name="tabs" checked>
@@ -208,9 +209,10 @@
                         <div class="wrapper">
                            <li>
                                <img src="images/sea1.jpg" alt="속초 영금정 사진">
+                               <h3>속초 영금정</h3>
                                <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>속초 영금정</h3>
+                                    
                                    <p>여행 둘째날 마지막 코스. <br>
                                     태풍이 동해로 지나간 이후라서 그런지 바다가 아주 거셌다.
                                     바람이 세차게 불고 비까지 내려서 오래 머물지는 못했지만
@@ -222,9 +224,10 @@
                            </li>
                            <li>
                             <img src="images/sea2.jpg" alt="정동진 바다 사진">
+                            <h3>정동진 바다</h3>
                             <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>정동진 바다</h3>
+                                    
                                    <p>여행 둘째날 첫번째 코스. <br>
                                     첫날 경포해변 갔을 때는 파도가 너무 세서 
                                     바닷물이 흙탕물이었는데 정동진 바다는 
@@ -236,9 +239,10 @@
                             </li>
                             <li>
                                 <img src="images/sea4.jpg" alt="바다 사진">
+                                <h3>정동진 바다</h3>
                                 <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>정동진 바다</h3>
+                                    
                                    <p>여행 둘째날 첫번째 코스. <br>
                                     날씨가 좋았다 안좋았다 오락가락했다.
                                     </p>
@@ -247,9 +251,10 @@
                             </li>
                             <li>
                              <img src="images/yangpyeong.jpg" alt="양평 하늘 사진">
+                             <h3>양평휴게소 하늘</h3>
                              <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>양평휴게소 하늘</h3>
+                                    
                                    <p>휴게소에 들렸는데 하늘이 예뻐서.
                                     </p>
                                     <a id="texthidden"><img id=x_button src="images/free-icon-x-button-458595.png"></a>
@@ -265,9 +270,10 @@
                         <div class="wrapper">
                            <li>
                                <img src="images/dolphin_cloud.jpg" alt="돌고래 모양 구름">
+                               <h3>돌고래 모양 구름</h3>
                                <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>돌고래 모양 구름</h3>
+                                    
                                    <p>뭔가 구름이 돌고래 닮았다.
                                     </p>
                                     <a id="texthidden"><img id=x_button src="images/free-icon-x-button-458595.png"></a>
@@ -275,9 +281,10 @@
                            </li>
                            <li>
                             <img src="images/sky-tree3.jpg" alt="하늘과 나무">
+                            <h3>하늘과 나무</h3>
                             <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>하늘과 나무</h3>
+                                    
                                    <p>일산 호수공원에서 누워서 찍은 사진
                                     </p>
                                     <a id="texthidden"><img id=x_button src="images/free-icon-x-button-458595.png"></a>
@@ -285,9 +292,10 @@
                             </li>
                             <li>
                                 <img src="images/munggae.jpg" alt="뭉게 구름">
+                                <h3>뭉게 구름</h3>
                                 <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>뭉게 구름</h3>
+                                    
                                    <p>구름이 몽글 몽글
                                     </p>
                                     <a id="texthidden"><img id=x_button src="images/free-icon-x-button-458595.png"></a>
@@ -295,9 +303,10 @@
                             </li>
                             <li>
                                 <img src="images/sunshine.jpg" alt="햇살">
+                                <h3>구름 사이로</h3>
                                 <a id="view">상세 설명 보기</a>
                                <div id="detail" class="detail">
-                                    <h3>구름 사이로</h3>
+                                    
                                    <p>구름 사이로 나오는 햇빛은 유난히 밝다.
                                     </p>
                                     <a id="texthidden"><img id=x_button src="images/free-icon-x-button-458595.png"></a>

@@ -7,3 +7,6 @@ quotes[2] = "삶은 다만 돌이켜 이해할 수 있을 뿐이지만,<br>그�
 
 var index = Math.floor(Math.random() * 3);
 todaygeul.innerHTML="<p>" + quotes[index] + "</p>";
+
+
+

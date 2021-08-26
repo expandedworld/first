@@ -23,7 +23,7 @@
     to {transform: perspective(200px) rotateX(-360deg) rotateY(0deg);}
   }
 
- @media screen and (max-width: 500px) and (orientation: portrait) {
+ @media screen and (max-width: 475px) and (orientation: portrait) {
     #container {
         margin: 0 auto;
         display: grid;
@@ -41,7 +41,7 @@
     }
     #logo {
         width: 85%;
-        padding: 50px;
+        padding-left: 50px;
     }
 
     #logo h1 {
@@ -324,7 +324,7 @@ footer {
                 <a href="sentences.html">Sentences</a>
                 <a href="audio.html">Audio</a>
                 <a href="pictures.html">Picture</a>
-                
+                <a onclick="toggle()"><span id="open_menu">▼</span><span id="close_menu">▲</span></a>
                 <a href="book.html">Book</a>
                 <a>Science</a>
                 <a>Think</a>

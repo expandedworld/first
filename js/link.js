@@ -13,7 +13,6 @@ box.addEventListener("click",function(){
 });
 
 var book = document.querySelector("#book");
-
 book.addEventListener("click", function(){
     location.href="book.html"
 });

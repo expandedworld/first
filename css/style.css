@@ -201,6 +201,7 @@ nav {
   float: right;
   font-size: 13px;
   transition: background-color 1s ease-in-out;
+  line-height: 20px;
 }
 
 #question a,

@@ -29,6 +29,7 @@
             #logo h1 {
                 color:rgba(13, 13, 14, 0.9);
                 text-shadow: none;
+                font-size: 40px;
             }
             
             nav {
@@ -74,6 +75,10 @@
 
             .menu-click {
             height: 100% !important;
+            }
+
+            #close_menu {
+                display: none;
             }
 
             
@@ -172,7 +177,7 @@
                     <li><a href="#">Book <span>▼</span></a>
                         <ul>
                             <li><a href="sentences.html" class="hangeul">책 속의 문장</a></li>
-                            <li><a href="#" class="hangeul">책 리뷰</a></li>
+                            <li><a href="book.html" class="hangeul">책 리뷰</a></li>
                         </ul>
                     </li>
                     <li><a href="audio.html">Audio</a>
@@ -192,8 +197,8 @@
             <a href="sentences.html">Sentences</a>
             <a href="audio.html">Audio</a>
             <a href="pictures.html">Picture</a>
-            <a onclick="toggle()">▼</a>
-            <a>Book</a>
+            <a onclick="toggle()"><span id="open_menu">▼</span><span id="close_menu">▲</span></a>
+            <a href="book.html">Book</a>
             <a>Science</a>
             <a>Think</a>
             <a>Question</a>
@@ -224,7 +229,7 @@
                                    <p>여행 둘째날 마지막 코스. <br>
                                     태풍이 동해로 지나간 이후라서 그런지 바다가 아주 거셌다.
                                     바람이 세차게 불고 비까지 내려서 오래 머물지는 못했지만
-                                    짧은 시간 바다는 위엄있는 모습을 보여주었다.
+                                    짧은 시간 자연에 압도 당하는 경험을 했다.
                                     </p>
                                     <a id="texthidden"><img id=x_button src="images/free-icon-x-button-458595.png"></a>
                                </div>

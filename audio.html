@@ -29,6 +29,7 @@
             #logo h1 {
                 color:rgba(13, 13, 14, 0.9);
                 text-shadow: none;
+                font-size: 40px;
             }
 
             nav {
@@ -73,6 +74,10 @@
 
             .menu-click {
             height: 100% !important;
+            }
+
+            #close_menu {
+                display: none;
             }
 
             .wrapper {
@@ -152,7 +157,7 @@
                     <li><a href="#">Book <span>▼</span></a>
                         <ul>
                             <li><a href="sentences.html" class="hangeul">책 속의 문장</a></li>
-                            <li><a href="#" class="hangeul">책 리뷰</a></li>
+                            <li><a href="book.html" class="hangeul">책 리뷰</a></li>
                         </ul>
                     </li>
                     <li><a href="audio.html">Audio</a>
@@ -173,8 +178,8 @@
             <a href="sentences.html">Sentences</a>
             <a href="audio.html">Audio</a>
             <a href="pictures.html">Picture</a>
-            <a onclick="toggle()">▼</a>
-            <a>Book</a>
+            <a onclick="toggle()"><span id="open_menu">▼</span><span id="close_menu">▲</span></a>
+            <a href="book.html">Book</a>
             <a>Science</a>
             <a>Think</a>
             <a>Question</a>

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Itim&family=Merienda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Itim&family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -154,8 +157,8 @@ nav {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  grid-gap: 20px 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px 10px;
   justify-content: center;
   align-content: center;
 }
@@ -167,7 +170,7 @@ nav {
 #links {
   width: 1200px;
   height: 100%;
-  background-color: ivory;
+  background-color: rgba(227, 241, 243, 0.6);
   border-bottom: 5px solid #fff;
   border: 1px solid #ddd;
   border-radius: 35px;
@@ -176,91 +179,205 @@ nav {
     5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-#audio_contents > p {
+.pictureContent input[type="radio"] {
+  display: none;
+}
+
+.pictureContent label {
+  display: inline-block;
+  margin: 0 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.pictureContent label:hover {
+  color: rgb(7, 87, 248);
+  cursor: pointer;
+}
+
+.pictureContent input:checked + label {
+  color: #222;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.tabContent {
+  display: none;
+  padding: 20px 0 0;
+}
+
+#tab1:checked ~ #pic_08,
+#tab2:checked ~ #pic_07 {
+  display: block;
+}
+
+.pictureContent {
+  border-top: 1px solid #ddd;
+  padding: 0;
+}
+
+#picture_contents h2 {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+#view {
+  display: block;
+  color: rgb(7, 87, 248);
+  margin: 5px auto;
+  width: 130px;
+  text-align: center;
+}
+
+#view:hover {
+  color: rgb(2, 45, 131);
+}
+
+#texthidden {
+  display: block;
+  color: #666;
+
+  width: 20px;
+  margin: 30px auto 0px auto;
+}
+#x_button {
+  width: 20px !important;
+  border-radius: 0 !important;
+}
+
+#picture_contents > p {
   margin-left: 40px;
   padding: 5px 0;
   font-weight: 600;
   padding: 16px 0;
   font-size: 20px;
+  display: inline-block;
 }
 
-#links ul {
-  padding: 0;
-  overflow: hidden;
-  margin: 0 auto;
+.bigbox {
+  width: 500px;
+  margin: 20px auto;
+  padding: 0px;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 30px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+.box {
+  margin: 20px auto;
+  width: 195px;
+  height: 270px;
+  background-color: rgb(253, 237, 240);
+  line-height: 270px;
 }
 
+.box img {
+  width: 155px;
+  margin: 0 20px;
+  transition: 1s;
+  vertical-align: middle;
+}
+
+.box img:hover {
+  transform: rotateY(20deg);
+}
+
+/*
 #links ul li {
+  border-radius: 20px;
+  width: 482px;
+  text-align: center;
+  margin: 10px 0 50px 0;
+  background-color: white; 
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    5px 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+#links ul li img {
+  width: 480px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wrapper h3 {
+  border-bottom: solid 3px rgb(248, 230, 233);
+  margin: 15px;
+  font-size: 34px;
+  font-weight: 400;
+  font-family: "East Sea Dokdo", cursive;
+}
+
+.wrapper li {
+  border: 1px solid #aaa;
+}
+*/
+
+h4 {
+  font-size: 30px;
+  font-family: "Nanum Pen Script", cursive;
   text-align: center;
   margin: 10px 0;
 }
 
-#links ul li a span {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 15%;
-  border: 1px solid #ddd;
-  line-height: 150px;
+p {
+  font-size: 13px;
+  text-align: center;
 }
 
-.linkContent {
-  border-top: 1px solid #ddd;
+#detail {
+  display: none;
+}
+
+.detail {
+  margin: 10px auto;
   padding: 0;
 }
 
-.linkContent p {
-  padding-top: 10px;
+.detail p {
+  font-size: 15px;
+  text-align: left;
+  line-height: 22px;
+  margin: 20px auto;
+  width: 90%;
 }
 
-#quick-icon1 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/10661.png?_1625682026");
-  background-size: 155px;
+.detail a,
+.detail a:visited {
+  color: rgb(7, 87, 248);
 }
 
-#quick-icon2 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/15206.png?_1627052760");
-  background-size: 155px;
+#close {
+  text-align: center;
+  background-color: rgb(17, 38, 79, 0.95);
+  width: 140px;
+  height: 27px;
+  border-radius: 7px;
+  float: right;
+  margin: 10px 0;
 }
 
-#quick-icon4 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/66.png?_1627356198");
-  background-size: 155px;
+#close p {
+  color: white;
+  line-height: 27px;
 }
 
-#quick-icon3 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/1771575.png?_1626699600");
-  background-size: 155px;
+#open {
+  text-align: center;
+  background-color: rgb(17, 38, 79, 0.95);
+  width: 140px;
+  height: 27px;
+  border-radius: 7px;
+  float: right;
+  margin: 20px 10px 10px 10px;
 }
 
-#quick-icon5 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/1769386.png?_1626930531");
-  background-size: 155px;
-}
-
-#quick-icon6 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/70.png?_1627478640");
-  background-size: 155px;
-}
-
-#quick-icon7 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/1769329.png?_1626015960");
-  background-size: 155px;
-}
-
-#quick-icon8 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/13003.png?_1627445502");
-  background-size: 155px;
-}
-
-#quick-icon9 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/1774643.png?_1627481288");
-  background-size: 155px;
-}
-#quick-icon10 {
-  background-image: url("https://img.podbbang.com/img/pb_m/thumb/x200/1776663.png?_1616576400");
-  background-size: 155px;
+#open p {
+  color: white;
+  line-height: 27px;
 }
 
 footer {

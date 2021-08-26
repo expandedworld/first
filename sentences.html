@@ -29,6 +29,7 @@
             #logo h1 {
                 color:rgba(13, 13, 14, 0.9);
                 text-shadow: none;
+                font-size: 40px;
             }
 
             nav {
@@ -74,6 +75,10 @@
 
             .menu-click {
             height: 100% !important;
+            }
+
+            #close_menu {
+                display: none;
             }
 
             
@@ -184,7 +189,7 @@
                     <li><a href="#">Book <span>▼</span></a>
                         <ul>
                             <li><a href="sentences.html" class="hangeul">책 속의 문장</a></li>
-                            <li><a href="#" class="hangeul">책 리뷰</a></li>
+                            <li><a href="book.html" class="hangeul">책 리뷰</a></li>
                         </ul>
                     </li>
                     <li><a href="audio.html">Audio</a>
@@ -204,8 +209,8 @@
             <a href="sentences.html">Sentences</a>
             <a href="audio.html">Audio</a>
             <a href="pictures.html">Picture</a>
-            <a onclick="toggle()">▼</a>
-            <a>Book</a>
+            <a onclick="toggle()"><span id="open_menu">▼</span><span id="close_menu">▲</span></a>
+            <a href="book.html">Book</a>
             <a>Science</a>
             <a>Think</a>
             <a>Question</a>
@@ -346,7 +351,7 @@
                         <div class="wrapper">
                            <li>
                             <h3>언어와 세계</h3>
-                               <a id="view">상세 설명 보기</a>
+                               <a id="view">문장 보기</a>
                                <div id="detail" class="detail">
                                     
                                    <p>내가 성취하고자 하는 세계의 한계는 바로 내가 구사하는 언어의 한계다.<br><i>- 루트비히 비트겐슈타인</i>
@@ -356,7 +361,7 @@
                            </li>
                            <li>
                             <h3>행복의 문</h3>
-                               <a id="view">상세 설명 보기</a>
+                               <a id="view">문장 보기</a>
                                <div id="detail" class="detail">
                                     
                                    <p> 행복의 한쪽 문이 닫힐 때, 다른 쪽 문이 열린다. 하지만 우리는 닫힌 문만 오래 바라보느라 우리에게 열린 다른 문을 보지 못할 때가 많다.
@@ -377,7 +382,7 @@
                         </li>
                            <li>
                             <h3>나무</h3>
-                               <a id="view">상세 설명 보기</a>
+                               <a id="view">문장 보기</a>
                                <div id="detail" class="detail">
                                     
                                    <p>나무는 씨앗으로 태어나 줄기로 자라고, 그런 뒤에 튼튼한 몸통으로 자라나 마지막에는 죽은 목재로 변해버리는 존재, 그 이상의 것이다. 나무는 하늘을 이기기 위해 뻗어가는 느리고 영원한 힘이다.<br><i>- 생텍쥐페리</i>

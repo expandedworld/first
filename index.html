@@ -9,7 +9,6 @@
     <style>
         .check_image {
         width :20px;
-        border:1px solid ivory;
         border-radius:50%;      
 	    animation: rotate 1.3s infinite;
         float: left;
@@ -48,6 +47,7 @@
     #logo h1 {
         color:rgba(13, 13, 14, 0.9);
         text-shadow: none;
+        font-size: 40px;
     }
     nav {
         display: none;
@@ -89,9 +89,12 @@
         border-right: none;
     }
 
-
     .menu-click {
     height: 100% !important;
+    }
+
+    #close_menu {
+        display: none;
     }
 
     /*#profile {
@@ -298,7 +301,7 @@ footer {
                     <li><a href="#">Book <span>▼</span></a>
                         <ul>
                             <li><a href="sentences.html" class="hangeul">책 속의 문장</a></li>
-                            <li><a href="#" class="hangeul">책 리뷰</a></li>
+                            <li><a href="book.html" class="hangeul">책 리뷰</a></li>
                         </ul>
                     </li>
                     <li>
@@ -320,8 +323,8 @@ footer {
                 <a href="sentences.html">Sentences</a>
                 <a href="audio.html">Audio</a>
                 <a href="pictures.html">Picture</a>
-                <a onclick="toggle()">▼</a>
-                <a>Book</a>
+                <a onclick="toggle()"><span id="open_menu">▼</span><span id="close_menu">▲</span></a>
+                <a href="book.html">Book</a>
                 <a>Science</a>
                 <a>Think</a>
                 <a>Question</a>
@@ -339,7 +342,8 @@ footer {
                     <p>Q. 자율주행자동차는 우리의 삶을 어떻게 바꿔놓을까요? <br>
                         아래의 설문에 답해주세요.
                     </p>
-                    <a href="#"><img src="images/check1.jpg" class="check_image"><b>설문 참여하기</b></a>
+                    <a href="#"><img src="https://img.icons8.com/emoji/50/000000/check-mark-emoji.png" class="check_image">
+                        <b>설문 참여하기</b></a>
             </div>
 
 

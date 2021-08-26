@@ -46,7 +46,7 @@ header {
 
 #logo h1 {
   font-family: "Merienda", cursive;
-  font-size: 40px;
+  font-size: 33px;
   color: #fff;
   animation: worm 10s infinite;
   /*transition: 0.5s ease-in;*/
@@ -170,7 +170,7 @@ nav {
 #links {
   width: 1200px;
   height: 100%;
-  background-color: rgb(248, 241, 242);
+  background-color: rgba(227, 241, 243, 0.6);
   border-bottom: 5px solid #fff;
   border: 1px solid #ddd;
   border-radius: 35px;
@@ -277,7 +277,7 @@ nav {
 }
 
 .wrapper h3 {
-  border-bottom: solid 3px rgb(194, 233, 238, 0.6);
+  border-bottom: solid 3px rgb(248, 230, 233);
   margin: 15px;
   font-size: 34px;
   font-weight: 400;
@@ -317,6 +317,7 @@ nav {
 #close p {
   color: white;
   line-height: 27px;
+  font-size: 13px;
 }
 
 #open {
@@ -332,6 +333,7 @@ nav {
 #open p {
   color: white;
   line-height: 27px;
+  font-size: 13px;
 }
 
 footer {

@@ -11,3 +11,9 @@ var box = document.querySelector("#box");
 box.addEventListener("click",function(){
     location.href="sentences.html"
 });
+
+var book = document.querySelector("#book");
+
+book.addEventListener("click", function(){
+    location.href="book.html"
+});
